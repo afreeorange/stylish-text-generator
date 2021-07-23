@@ -1,0 +1,9 @@
+.backup
+.cache
+.DS_Store
+.env
+.parcel-cache
+*.config.json
+dist*
+node_modules
+yarn-*

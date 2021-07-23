@@ -1,0 +1,16 @@
+{
+  "name": "text-generator",
+  "version": "1.0.0",
+  "main": "dist/index.html",
+  "author": "Nikhil Anand <mail@nikhil.io> (https://nikhil.io)",
+  "scripts": {
+    "build": "parcel build src/index.html",
+    "clean": "rimraf dist",
+    "start": "parcel src/index.html"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "parcel": "^2.0.0-beta.3.1",
+    "rimraf": "^3.0.2"
+  }
+}
