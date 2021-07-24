@@ -1,19 +1,23 @@
-export type TextStyles = {
-  italic: string;
+export type StyleMap = {
   bold: string;
   boldItalic: string;
+  box: string;
+  boxFilled: string;
+  circle: string;
   cursive: string;
   cursiveBold: string;
   goth: string;
   gothBold: string;
-  box: string;
-  boxFilled: string;
+  italic: string;
   stemOutline: string;
-  wide: string;
-  circle: string;
   typewriter: string;
+  wide: string;
+  alternatingCaseOne?: string;
+  alternatingCaseTwo?: string;
 };
 
 export type GlyphMap = {
-  [glyph: string]: TextStyles;
+  [glyph: string]: StyleMap;
 };
+
+export type TextStyles = keyof StyleMap;
