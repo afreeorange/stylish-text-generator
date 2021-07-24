@@ -1,6 +1,6 @@
-# Fancy Text Generator
+# Stylish Text Generator
 
-Use the generated text for shit like Instagram and mocking relatives on WhatsApp. Here because (a) I'm lazy to Google existing ones and (b) I cannot stand the modern web 'app'.
+Use the generated text for shit like Instagram where you're not allowed to use mockup. Here because (a) I'm lazy to Google existing ones and (b) I cannot stand the modern web app. 
 
 Will do letters and numbers: `abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890`
 
