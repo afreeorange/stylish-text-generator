@@ -1,6 +1,8 @@
 export type StyleMap = {
   bold: string;
   boldItalic: string;
+  superscript: string;
+  subscript: string;
   box: string;
   boxFilled: string;
   circle: string;

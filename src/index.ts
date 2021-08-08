@@ -10,6 +10,8 @@ const mapInput = (text: string): StyleMap => {
   const ret = {
     bold: turnText(chars, "bold"),
     boldItalic: turnText(chars, "boldItalic"),
+    superscript: turnText(chars, "superscript"),
+    subscript: turnText(chars, "subscript"),
     box: turnText(chars, "box"),
     boxFilled: turnText(chars, "boxFilled"),
     circle: turnText(chars, "circle"),
@@ -37,25 +39,25 @@ const $$ = document.querySelectorAll.bind(document);
 
 (() => {
   $("input").addEventListener("keyup", (e) =>
-    (
-      [
-        "italic",
-        "bold",
-        "boldItalic",
-        "cursive",
-        "cursiveBold",
-        "goth",
-        "gothBold",
-        "box",
-        "boxFilled",
-        "stemOutline",
-        "wide",
-        "circle",
-        "typewriter",
-        "alternatingCaseOne",
-        "alternatingCaseTwo",
-      ] as TextStyles[]
-    ).map((style) => {
+    ([
+      "italic",
+      "bold",
+      "boldItalic",
+      "superscript",
+      "subscript",
+      "cursive",
+      "cursiveBold",
+      "goth",
+      "gothBold",
+      "box",
+      "boxFilled",
+      "stemOutline",
+      "wide",
+      "circle",
+      "typewriter",
+      "alternatingCaseOne",
+      "alternatingCaseTwo",
+    ] as TextStyles[]).map((style) => {
       $(`div[name=${style}]`).innerHTML = mapInput(e.target.value)[style];
     })
   );

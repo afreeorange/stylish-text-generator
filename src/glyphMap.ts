@@ -2,6 +2,8 @@ import {
   base,
   bold,
   boldItalic,
+  superscript,
+  subscript,
   box,
   boxFilled,
   circle,
@@ -22,6 +24,8 @@ base.forEach((char, i) => {
   glyphMap[char] = {
     bold: bold[i],
     boldItalic: boldItalic[i],
+    superscript: superscript[i],
+    subscript: subscript[i],
     box: box[i],
     boxFilled: boxFilled[i],
     circle: circle[i],
