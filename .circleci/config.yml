@@ -1,0 +1,35 @@
+version: 2.1
+
+jobs:
+  build:
+    docker:
+      - image: afreeorange/build:latest
+
+    steps:
+      - checkout
+
+      # Download and cache dependencies. Use the latest cache
+      # if no exact match is found.
+      - restore_cache:
+          keys:
+            - v2-dependencies-{{ checksum "package.json" }}
+            - v2-dependencies-
+
+      - run:
+          name: Installing dependencies
+          command: yarn
+
+      - save_cache:
+          paths:
+            - node_modules
+          key: v2-dependencies-{{ checksum "package.json" }}
+
+      - run:
+          name: Building
+          command:
+            yarn build --public-url https://public.nikhil.io/text-generator
+
+      - run:
+          name: Deploying
+          command: 
+            aws s3 sync --delete dist/ s3://public.nikhil.io/text-generator/

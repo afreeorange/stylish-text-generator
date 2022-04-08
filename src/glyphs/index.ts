@@ -14,3 +14,5 @@ export { default as stemOutline } from "./stemOutline";
 export { default as strike } from "./strike";
 export { default as typewriter } from "./typewriter";
 export { default as wide } from "./wide";
+export { default as superscript } from "./superscript";
+export { default as subscript } from "./subscript";
