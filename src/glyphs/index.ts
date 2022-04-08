@@ -9,6 +9,8 @@ export { default as cursiveBold } from "./cursiveBold";
 export { default as goth } from "./goth";
 export { default as gothBold } from "./gothBold";
 export { default as italic } from "./italic";
+export { default as slashSymbol } from "./slashSymbol";
 export { default as stemOutline } from "./stemOutline";
+export { default as strike } from "./strike";
 export { default as typewriter } from "./typewriter";
 export { default as wide } from "./wide";

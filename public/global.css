@@ -1,0 +1,58 @@
+html {
+  box-sizing: border-box;
+  font-size: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
+    helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+p,
+input {
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+body > input {
+  border: 0;
+  border-bottom: 2px solid red;
+  color: red;
+  font-size: 125%;
+  font-weight: bold;
+  padding: 0.5em 0.25em;
+  width: 100%;
+  /* background: #EA526F; */
+}
+
+main {
+  margin-bottom: 1em;
+}
+
+main p:not(:last-of-type) {
+  border-bottom: 1px dotted #ccc;
+  min-height: 2em;
+}
+
+main p {
+  cursor: pointer;
+  padding: 0.25em;
+}
+
+main p:hover {
+  background: #f2f2f2;
+}
+
+main p small {
+  color: #999;
+  font-size: small;
+}
+
+main p div {
+}
