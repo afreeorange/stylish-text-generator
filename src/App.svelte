@@ -6,7 +6,7 @@
     navigator.clipboard.writeText(e.innerText);
   };
 
-  let text = `Southpark!`;
+  let text = ``;
   console.log(mapInput(text));
   $: styles = mapInput(text);
   $: show = text.length === 0 ? false : true;

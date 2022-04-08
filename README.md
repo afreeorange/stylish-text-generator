@@ -20,7 +20,7 @@ yarn build
 
 # I do this with
 yarn build --public-url https://public.nikhil.io/text-generator
-aws s3 sync --delete dist/ s3://public.nikhil.io/text-generator/
+aws s3 sync --delete public/ s3://public.nikhil.io/text-generator/
 ```
 
 ## Resources
