@@ -13,6 +13,8 @@ import {
   slashSymbol,
   stemOutline,
   strike,
+  subscript,
+  superscript,
   typewriter,
   wide,
 } from "./glyphs";
@@ -21,19 +23,21 @@ const glyphMap = {};
 
 base.forEach((char, i) => {
   glyphMap[char] = {
-    "Bold Italic": boldItalic[i],
     Bold: bold[i],
-    "Box Filled": boxFilled[i],
+    "Bold Italic": boldItalic[i],
     Box: box[i],
+    "Box Filled": boxFilled[i],
     Circle: circle[i],
-    "Cursive Bold": cursiveBold[i],
     Cursive: cursive[i],
-    "Goth Bold": gothBold[i],
+    "Cursive Bold": cursiveBold[i],
     Goth: goth[i],
+    "Goth Bold": gothBold[i],
     Italic: italic[i],
     Slash: slashSymbol[i],
     Stem: stemOutline[i],
     Strike: strike[i],
+    Subscript: subscript[i],
+    Superscript: superscript[i],
     Typewriter: typewriter[i],
     Wide: wide[i],
   };
@@ -61,6 +65,8 @@ export const mapInput = (text) => {
     Slash: turnText(chars, "Slash"),
     Stem: turnText(chars, "Stem"),
     Strike: turnText(chars, "Strike"),
+    Subscript: turnText(chars, "Subscript"),
+    Superscript: turnText(chars, "Superscript"),
     Typewriter: turnText(chars, "Typewriter"),
     Wide: turnText(chars, "Wide"),
     "Alternating Case One": chars

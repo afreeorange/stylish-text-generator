@@ -1,9 +1,17 @@
+:root {
+  --color-background: #0e273c;
+  --color-dark: #070707;
+  --color-text: #fff;
+  --color-highlight-dull: #4a306d;
+  --color-highlight: #a167a5;
+}
+
 html {
   box-sizing: border-box;
   font-size: 20px;
   font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
     helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
-
+  background: var(--color-background);
 }
 
 *,
@@ -22,13 +30,13 @@ input {
 
 body > input {
   border: 0;
-  border-bottom: 2px solid red;
-  color: red;
-  font-size: 125%;
+  border-bottom: 3px solid var(--color-highlight-dull);
+  color: var(--color-text);
+  font-size: 150%;
   font-weight: bold;
   padding: 0.5em 0.25em;
   width: 100%;
-  /* background: #EA526F; */
+  background: var(--color-dark);
 }
 
 main {
@@ -36,7 +44,7 @@ main {
 }
 
 main p:not(:last-of-type) {
-  border-bottom: 1px dotted #ccc;
+  border-bottom: 1px dotted var(--color-highlight-dull);
   min-height: 2em;
 }
 
@@ -46,13 +54,15 @@ main p {
 }
 
 main p:hover {
-  background: #f2f2f2;
+  background: var(--color-dark);
 }
 
 main p small {
-  color: #999;
+  color: var(--color-highlight);
   font-size: small;
 }
 
 main p div {
+  font-size: xx-large;
+  color: var(--color-text);
 }
