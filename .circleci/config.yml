@@ -1,5 +1,9 @@
 version: 2.1
 
+orbs:
+  # https://circleci.com/developer/orbs/orb/circleci/aws-s3
+  aws-s3: circleci/aws-s3@2.0.0
+
 jobs:
   build:
     docker:
@@ -28,6 +32,12 @@ jobs:
           name: Building
           command: yarn build
 
-      - run:
-          name: Deploying
-          command: aws s3 sync --delete public/ s3://public.nikhil.io/text-generator/
+      - aws-s3/sync:
+          aws-region: AWS_DEFAULT_REGION
+          aws-access-key-id: AWS_ACCESS_KEY_ID
+          aws-secret-access-key: AWS_SECRET_ACCESS_KEY
+          from: public/
+          to: "s3://public.nikhil.io/text-generator/"
+          arguments: |
+            --delete \
+            --content-encoding 'gzip'
