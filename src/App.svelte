@@ -84,6 +84,7 @@
   main p div {
     font-size: xx-large;
     color: var(--color-text);
+    overflow-x: scroll;
   }
 
   footer {
