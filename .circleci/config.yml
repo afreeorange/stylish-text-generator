@@ -35,5 +35,4 @@ jobs:
           from: public/
           to: "s3://public.nikhil.io/text-generator/"
           arguments: |
-            --delete \
-            --content-encoding 'gzip'
+            --delete
