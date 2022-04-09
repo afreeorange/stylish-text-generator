@@ -52,8 +52,15 @@ export const mapInput = (text) => {
   const chars = text.split("");
 
   const ret = {
+    Italic: turnText(chars, "Italic"),
     Bold: turnText(chars, "Bold"),
     "Bold Italic": turnText(chars, "Bold Italic"),
+    "Alternating Case One": chars
+      .map((c, i) => (i % 2 === 0 ? c : c.toUpperCase()))
+      .join(""),
+    "Alternating Case Two": chars
+      .map((c, i) => (i % 2 === 0 ? c.toUpperCase() : c))
+      .join(""),
     Box: turnText(chars, "Box"),
     "Box Filled": turnText(chars, "Box Filled"),
     Circle: turnText(chars, "Circle"),
@@ -61,7 +68,6 @@ export const mapInput = (text) => {
     "Cursive Bold": turnText(chars, "Cursive Bold"),
     Goth: turnText(chars, "Goth"),
     "Goth Bold": turnText(chars, "Goth Bold"),
-    Italic: turnText(chars, "Italic"),
     Slash: turnText(chars, "Slash"),
     Stem: turnText(chars, "Stem"),
     Strike: turnText(chars, "Strike"),
@@ -69,12 +75,6 @@ export const mapInput = (text) => {
     Superscript: turnText(chars, "Superscript"),
     Typewriter: turnText(chars, "Typewriter"),
     Wide: turnText(chars, "Wide"),
-    "Alternating Case One": chars
-      .map((c, i) => (i % 2 === 0 ? c : c.toUpperCase()))
-      .join(""),
-    "Alternating Case Two": chars
-      .map((c, i) => (i % 2 === 0 ? c.toUpperCase() : c))
-      .join(""),
   };
 
   return ret;

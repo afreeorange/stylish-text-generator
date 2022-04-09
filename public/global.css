@@ -1,9 +1,9 @@
 :root {
-  --color-background: #0e273c;
-  --color-dark: #070707;
-  --color-text: #fff;
-  --color-highlight-dull: #4a306d;
-  --color-highlight: #a167a5;
+  --color-background: #fff;
+  --color-dark: #f2f2f2;
+  --color-text: #101010;
+  --color-highlight-dull: #ccc;
+  --color-highlight: #f30;
 }
 
 html {
@@ -28,52 +28,3 @@ input {
   padding: 0;
 }
 
-body > input {
-  border: 0;
-
-  color: var(--color-text);
-  font-size: 150%;
-  font-weight: bold;
-  padding: 0.5em 0.25em;
-  width: 100%;
-  background: var(--color-dark);
-}
-
-main {
-  margin-bottom: 1em;
-}
-
-main > small {
-  background: var(--color-dark);
-  color: var(--color-highlight);
-  border-bottom: 3px solid var(--color-highlight-dull);
-  font-size: x-small;
-  /* border-bottom: 1px dotted var(--color-highlight-dull); */
-  padding: 0.5em;
-  display: block;
-  width: 100%;
-}
-
-main p:not(:last-of-type) {
-  border-bottom: 1px dotted var(--color-highlight-dull);
-  min-height: 2em;
-}
-
-main p {
-  cursor: pointer;
-  padding: 0.25em;
-}
-
-main p:hover {
-  background: var(--color-dark);
-}
-
-main p small {
-  color: var(--color-highlight);
-  font-size: small;
-}
-
-main p div {
-  font-size: xx-large;
-  color: var(--color-text);
-}

@@ -26,6 +26,8 @@ jobs:
 
       - run:
           name: Building
+          environment:
+            PUBLIC_URL: /text-generator
           command: yarn build
 
       - aws-s3/sync:
