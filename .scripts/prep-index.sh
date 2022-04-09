@@ -6,7 +6,7 @@
 
 set -euo pipefail
 
-URL_TO_SET=${PUBLIC_URL:-"/"}
+URL_TO_SET=${PUBLIC_URL:-""}
 URL_TO_SET=$(echo "$URL_TO_SET" | sed 's/\//\\\//g')
 
 sed s/%PUBLIC_URL%/"$URL_TO_SET"/g ./public/index.template.html > ./public/index.html
