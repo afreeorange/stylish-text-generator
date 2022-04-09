@@ -3,7 +3,7 @@
   "version": "2.1.0",
   "private": true,
   "scripts": {
-    "build": "bash .scripts/prep-index.sh; rollup -c; rm public/index.template.html",
+    "build": "bash .scripts/prep-index.sh; rollup -c",
     "dev": "bash .scripts/prep-index.sh; rollup -c -w",
     "clean": "rm -rf public/build/*",
     "start": "sirv public --no-clear",

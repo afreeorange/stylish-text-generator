@@ -12,7 +12,7 @@
   $: show = text.length === 0 ? false : true;
 </script>
 
-<input bind:value={text} placeholder="type something..." />
+<input autofocus bind:value={text} placeholder="type something..." />
 
 <main>
   <small>Click/tap to copy</small>
