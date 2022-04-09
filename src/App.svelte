@@ -15,6 +15,7 @@
 <input bind:value={text} placeholder="type something..." />
 
 <main>
+  <small>Click/tap to copy</small>
   {#each Object.keys(styles) as style}
     <p on:click={() => handleClick(style)}>
       <small>{style}</small>

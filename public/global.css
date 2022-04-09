@@ -30,7 +30,7 @@ input {
 
 body > input {
   border: 0;
-  border-bottom: 3px solid var(--color-highlight-dull);
+
   color: var(--color-text);
   font-size: 150%;
   font-weight: bold;
@@ -41,6 +41,17 @@ body > input {
 
 main {
   margin-bottom: 1em;
+}
+
+main > small {
+  background: var(--color-dark);
+  color: var(--color-highlight);
+  border-bottom: 3px solid var(--color-highlight-dull);
+  font-size: x-small;
+  /* border-bottom: 1px dotted var(--color-highlight-dull); */
+  padding: 0.5em;
+  display: block;
+  width: 100%;
 }
 
 main p:not(:last-of-type) {

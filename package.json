@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "build": "rollup -c",
-    "start": "rollup -c -w",
-    "check": "svelte-check --tsconfig ./tsconfig.json",
-    "deploy": "aws s3 sync --delete public/ s3://public.nikhil.io/text-generator/ --profile nikhil.io"
+    "dev": "rollup -c -w",
+    "start": "sirv public --no-clear",
+    "check": "svelte-check --tsconfig ./tsconfig.json"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^17.0.0",
