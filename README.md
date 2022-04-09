@@ -15,12 +15,11 @@ yarn
 # Start live-reloading server
 yarn dev
 
+# Clean
+yarn clean
+
 # Build
 yarn build
-
-# I do this with
-yarn build --public-url https://public.nikhil.io/text-generator
-aws s3 sync --delete public/ s3://public.nikhil.io/text-generator/
 ```
 
 ## Resources
@@ -30,6 +29,10 @@ AKA "Where I took all the glyphs from."
 * https://lingojam.com/FontsForInstagram
 * https://www.fontget.com/instagram-fonts/
 * https://instagram-fonts.top/instagram-fonts.php
+
+## TODO
+
+Could not find a way to change the `publicPath` without looking at Svelte CLI (which mentions... Vue?) and SvelteKit which seems complicated. Might have to do this with Rollup.
 
 ## License
 

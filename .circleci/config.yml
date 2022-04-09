@@ -1,7 +1,6 @@
 version: 2.1
 
 orbs:
-  # https://circleci.com/developer/orbs/orb/circleci/aws-s3
   aws-s3: circleci/aws-s3@2.0.0
 
 jobs:
@@ -11,9 +10,6 @@ jobs:
 
     steps:
       - checkout
-
-      # Download and cache dependencies. Use the latest cache
-      # if no exact match is found.
       - restore_cache:
           keys:
             - v2-dependencies-{{ checksum "package.json" }}
