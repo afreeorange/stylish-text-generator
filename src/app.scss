@@ -34,18 +34,24 @@ main {
   flex-direction: column;
   justify-content: space-between;
 
-  form {
+  header {
     display: flex;
     flex-direction: column;
     background: $color-primary;
 
-    input {
+    > span {
       background: $color-primary;
       border: 0;
       color: $color-secondary;
       font-size: 3em;
       outline: 0;
       padding: 0.25em 0.4em;
+    }
+
+    [contenteditable="true"]:empty:before {
+      content: attr(placeholder);
+      pointer-events: none;
+      display: block;
     }
 
     label {

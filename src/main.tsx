@@ -1,4 +1,4 @@
-import { render } from "preact";
-import Generator from "./app";
+import { render } from 'preact'
+import App from './app'
 
-render(<Generator />, document.querySelector("main") as HTMLElement);
+render(<App />, document.querySelector('main') as HTMLElement)

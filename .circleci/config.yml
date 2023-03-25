@@ -17,7 +17,7 @@ jobs:
 
       - run:
           name: Installing dependencies
-          command: yarn
+          command: npm i
 
       - save_cache:
           paths:
@@ -28,7 +28,7 @@ jobs:
           name: Building
           environment:
             PUBLIC_URL: /text-generator
-          command: yarn build
+          command: npm run build
 
       - aws-s3/sync:
           aws-region: AWS_DEFAULT_REGION

@@ -49,12 +49,10 @@ const GithubLogo = () => (
   </svg>
 );
 
-export default () => {
+const App = () => {
   const [text, setText] = useState("");
   const [hash, setHash] = useHash();
   const [styled, setStyled] = useState<Record<string, string> | null>(null);
-
-  console.log(GithubLogo);
 
   const handleClick = (styleName: string, styledText: string) => {
     navigator.clipboard.writeText(styledText);
@@ -99,19 +97,31 @@ export default () => {
 
   return (
     <>
-      <form onSubmit={() => false}>
-        <input
+      <header>
+        {/*
+          NOTE:
+          Using span because we want auto-expanding for longer piecs of text.
+          There are several ways to achieve this and this is the simplest.
+          https://css-tricks.com/auto-growing-inputs-textareas/
+         */}
+        <span
           autoFocus
-          name="text"
-          onKeyUp={debounce(
-            (e) => setText((e.target as HTMLInputElement).value),
+          contentEditable
+          spellcheck={false}
+          onKeyDown={debounce(
+            () =>
+              setText(
+                (document.querySelector(
+                  "span[contenteditable]"
+                ) as HTMLElement)!.innerText.trim()
+              ),
             DEBOUNCE_INTERVAL
           )}
           placeholder="type something..."
           value={text}
         />
         {text !== "" && <label htmlFor="text">Tap or click to copy</label>}
-      </form>
+      </header>
 
       {text !== "" &&
         styled &&
@@ -134,3 +144,5 @@ export default () => {
     </>
   );
 };
+
+export default App;

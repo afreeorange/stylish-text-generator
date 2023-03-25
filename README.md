@@ -10,10 +10,10 @@ Uses pnpm and Preact and is bootstrapped by Vite.
 
 ```bash
 # Start a live-reloading server
-pnpm run dev
+npm run dev
 
 # Build
-pnpm run build
+npm run build
 ```
 
 ## References
@@ -28,3 +28,4 @@ pnpm run build
 ## License
 
 [WTFPL](http://www.wtfpl.net/)
+
