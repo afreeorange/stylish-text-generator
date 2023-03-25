@@ -1,10 +1,11 @@
 {
   "name": "stylish-text-generator",
   "private": true,
-  "version": "1.1.0",
+  "version": "1.1.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "clean": "rm -rf dist",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },

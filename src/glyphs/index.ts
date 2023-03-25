@@ -3,26 +3,46 @@
  * NOTE: This style of importing is only for the latest and greatest.
  */
 
+import bold from "./bold";
+import boldItalic from "./boldItalic";
+import box from "./box";
+import boxFilled from "./boxFilled";
+import circle from "./circle";
+import cursive from "./cursive";
+import cursiveBold from "./cursiveBold";
+import goth from "./goth";
+import gothBold from "./gothBold";
+import italic from "./italic";
+import slashSymbol from "./slashSymbol";
+import smallCaps from "./smallCaps";
+import stemOutline from "./stemOutline";
+import strike from "./strike";
+import subscript from "./subscript";
+import superscript from "./superscript";
+import typewriter from "./typewriter";
+import upsideDown from "./upsideDown";
+import wide from "./wide";
+
 const LISTS_OF_GLYPHS: readonly Glyph[] = [
-  (await import("./bold")).default,
-  (await import("./boldItalic")).default,
-  (await import("./box")).default,
-  (await import("./boxFilled")).default,
-  (await import("./circle")).default,
-  (await import("./cursive")).default,
-  (await import("./cursiveBold")).default,
-  (await import("./goth")).default,
-  (await import("./gothBold")).default,
-  (await import("./italic")).default,
-  (await import("./slashSymbol")).default,
-  (await import("./smallCaps")).default,
-  (await import("./stemOutline")).default,
-  (await import("./strike")).default,
-  (await import("./subscript")).default,
-  (await import("./superscript")).default,
-  (await import("./typewriter")).default,
-  (await import("./upsideDown")).default,
-  (await import("./wide")).default,
+  bold,
+  boldItalic,
+  box,
+  boxFilled,
+  circle,
+  cursive,
+  cursiveBold,
+  goth,
+  gothBold,
+  italic,
+  slashSymbol,
+  smallCaps,
+  stemOutline,
+  strike,
+  subscript,
+  superscript,
+  typewriter,
+  upsideDown,
+  wide,
 ] as const;
 
 /* --- The rest is bean-counting --- */
