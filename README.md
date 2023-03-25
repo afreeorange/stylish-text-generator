@@ -1,6 +1,6 @@
 # Stylish Text Generator
 
-Use the generated text for shit like Instagram where you're not allowed to use markup. Here because too I'm lazy to Google existing ones. See it in action here.
+Use the generated text for shit like Instagram where you're not allowed to use markup. Here because too I'm lazy to Google existing ones. [See it in action here](https://public.nikhil.io/text-generator/index.html#Jackdaws%20and%20quartz%20'n%20all%20that%20jazz!).
 
 Will do letters and numbers: `abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890`
 
