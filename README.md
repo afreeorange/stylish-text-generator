@@ -1,38 +1,29 @@
 # Stylish Text Generator
 
-Use the generated text for shit like Instagram where you're not allowed to use markup. Here because (a) I'm lazy to Google existing ones and (b) I cannot stand the modern web app.
+Use the generated text for shit like Instagram where you're not allowed to use markup. Here because too I'm lazy to Google existing ones. See it in action here.
 
 Will do letters and numbers: `abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890`
 
 ## Development
 
-This is my first Svelte project!
+Uses pnpm and Preact and is bootstrapped by Vite.
 
 ```bash
-# Install dependencies
-yarn
-
-# Start live-reloading server
-yarn dev
-
-# Clean
-yarn clean
+# Start a live-reloading server
+pnpm run dev
 
 # Build
-yarn build
+pnpm run build
 ```
 
-## Resources
+## References
 
-AKA "Where I took all the glyphs from."
-
-* https://lingojam.com/FontsForInstagram
-* https://www.fontget.com/instagram-fonts/
-* https://instagram-fonts.top/instagram-fonts.php
-
-## TODO
-
-Could not find a way to change the `publicPath` without looking at Svelte CLI (which mentions... Vue?) and SvelteKit which seems complicated. Might have to do this with Rollup.
+- [Palette Source](https://bootcamp.uxdesign.cc/how-can-i-design-in-the-neo-brutalism-style-d85c458042de)
+- Glyph Sources
+  - https://lingojam.com/FontsForInstagram
+  - https://www.fontget.com/instagram-fonts/
+  - https://instagram-fonts.top/instagram-fonts.php
+- [Favicon Source](https://www.flaticon.com/free-icon/typography_1998369?term=typography&related_id=1998369)
 
 ## License
 
