@@ -6,7 +6,7 @@ Will do letters and numbers: `abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWX
 
 ## Development
 
-Uses pnpm and Preact and is bootstrapped by Vite.
+Uses Preact and is bootstrapped by Vite.
 
 ```bash
 # Start a live-reloading server
