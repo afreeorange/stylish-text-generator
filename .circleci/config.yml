@@ -26,9 +26,8 @@ jobs:
 
       - run:
           name: Building
-          environment:
-            PUBLIC_URL: /text-generator
-          command: npm run build
+          # https://vitejs.dev/guide/build.html#public-base-path
+          command: npm run build --base=/text-generator
 
       - aws-s3/sync:
           aws-region: AWS_DEFAULT_REGION
